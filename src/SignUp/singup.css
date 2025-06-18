@@ -1,0 +1,98 @@
+/* Overall Page */
+.signup__page {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header (reuse your existing styles) */
+.logo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #444;
+  background: #2b2b2b;
+  height: 60px;
+  padding: 0 16px;
+}
+
+.logo img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+/* Signup Form Container */
+.signup__container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: #2b2b2b;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(108, 99, 255, 0.2);
+}
+
+/* Title */
+.signup__container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+/* Form */
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signup__form input {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #444;
+}
+
+.signup__form input:focus {
+  border-color: #6c63ff;
+}
+
+/* Button */
+.signup__form button {
+  padding: 12px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup__form button:hover {
+  background-color: #8a2be2;
+}
+
+/* Redirect */
+.login__redirect {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.login__redirect a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .signup__container {
+    margin: 30px 16px;
+    padding: 24px;
+  }
+}

@@ -1,18 +1,18 @@
 
 import './App.css';
 import Chat from './Client/Chat';
-
-
-
+import Login from './Login/login';
+import SignUp from './SignUp/SignUp';
+import Logo from './Verbomind logo.png'
 const App = () => {
-
  return(
   <>
   <div id='App__header'>
  <div className='logo__header'>
-   <h1 className='Logo'>VerboMind </h1>
+   <div className='logo'>
+    <img src={Logo} alt="Logo"/>
+   </div>
    <div className='icon'>
-
    </div>
 
     </div>
@@ -24,12 +24,13 @@ const App = () => {
         <div>New Chat</div>
       </aside>
       <main className='chat__box'>
-            <Chat />
+            {/* <Chat /> */}
+     
       </main>
       </div>
+      <Login/>
 
-
-   
+    {/* <SignUp/> */}
     </div>
 
 

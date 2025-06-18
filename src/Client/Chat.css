@@ -94,7 +94,7 @@ max-height: 92vh;
     margin-left: 10px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1rem;
     transition: 0.2s;
     border-radius: 20px;
     width: 4rem;
@@ -106,7 +106,7 @@ max-height: 92vh;
   }
   @media (max-width: 600px) {
   .btn {
-    font-size: 14px;
+    font-size: 1rem;
     padding: 10px 20px;
   }
 }
@@ -121,7 +121,7 @@ max-height: 92vh;
     background-color: #d507e0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
      border: none;
-    height: 22%;
+    height: auto;
     max-height: 92vh;
     width: 70%;
     border-radius: 20px;
@@ -134,12 +134,12 @@ max-height: 92vh;
 }
 
 .welcome-text h2 {
-  font-size: 24px;
+  font-size: 1.8rem;
   /* margin-bottom: 0.5rem; */
 }
 
 .welcome-text p {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
