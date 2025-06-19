@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url('./loginBackground.png');
 }
 
 .LogninIntput {
@@ -52,6 +53,10 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+}
+
+.signupbtn{
+cursor: pointer;
 }
 
 @media (max-width: 768px) {

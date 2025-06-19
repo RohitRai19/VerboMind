@@ -10,8 +10,9 @@ const firebaseConfig = {
   messagingSenderId: "109115536810",
   appId: "1:109115536810:web:a8e03cc27ceaa6d4e527d3",
   measurementId: "G-9HD197BF1Q",
+  databaseURL:"https://ai-reactara-default-rtdb.firebaseio.com",
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
