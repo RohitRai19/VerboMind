@@ -1,12 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, createContext, useContext } from "react";
 import axios from "axios";
 import parse from "html-react-parser";
 import "./Chat.css";
+
 
 function Chat() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const bottomRef = useRef(null);
+
 
   // Load chat history from the backend (cookies)
   useEffect(() => {
@@ -63,7 +65,10 @@ function Chat() {
     }
   };
 
-  const handleClearChat = async () => {
+ 
+
+   
+    const handleClearChat= async () => {
     try {
       await axios.post(
         "http://localhost:5000/api/chat/clear",
@@ -74,8 +79,13 @@ function Chat() {
     } catch (error) {
       console.error("Error clearing Chat", error);
     }
+
   };
 
+  
+
+
+  
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);

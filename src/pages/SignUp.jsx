@@ -13,22 +13,25 @@ const[password,setPassword]= useState('')
 const[name,setName]=useState('')
 const navigate = useNavigate()
 
-const createUser=(e)=>{
+
+  const createUser=(e)=>{
     e.preventDefault();
   createUserWithEmailAndPassword(auth,email,password).then((userCredential)=>{
     const user= userCredential.user
     return updateProfile(user,{
       displayName:name
+    }).then(()=>{
+      return auth.currentUser.reload();
     })
   })
   .then(()=>{
-    alert("Success")
+    // alert("Success")
+    console.log("Success")
     navigate('/chat')
   })
   .catch((error)=>{
       alert(error.message)
-  })
-}
+  })}
   return (
     <div className="signup__page">
   <div className="SingUplogo__header">

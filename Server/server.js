@@ -4,7 +4,6 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import fs from 'fs';
-console.log("ENV file exists:", fs.existsSync("./.env")); // should print: true
 
 
 dotenv.config();

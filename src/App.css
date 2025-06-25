@@ -21,18 +21,30 @@ body {
   align-items: center;
   border-bottom: 2px solid #444;
   background: #2b2b2b;
-  height: 60px; /* fixed height */
+ 
   display: flex;
   overflow: hidden;
   padding: 0 16px;
+  flex-wrap: wrap;
+  height: auto;
+   min-height: 60px; /* fixed height */
+  
+}
+.icon{
+      display: flex;
+    border: 2px solid red;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    /* flex-wrap: wrap; */
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%; /* Remove padding to prevent overflow */
-  flex: 1;
+
+.logo{
+display: flex;
+    justify-content: center;
+    flex: 2;
+    align-items: center;
 }
 
 .logo img {
@@ -57,6 +69,8 @@ a{
    color: inherit;
    
 }
+.userName{
+  display: flex;}
 
 .login-button:hover {
   transform: scale(1.05);
@@ -113,6 +127,21 @@ a{
     border-bottom: 2px solid #444;
   }
 }
+
+
+@media (max-width: 768px) {
+  .logo__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
 
 /* display: flex
 ;

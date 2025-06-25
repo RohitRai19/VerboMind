@@ -17,10 +17,19 @@
   padding: 0 16px;
 }
 
-/* .logo img {
-  max-height: 40px;
+.SingUplogo{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.SingUplogo img {
+  max-height: auto;
   object-fit: contain;
-} */
+  width: 180px;
+}
 
 /* Signup Form Container */
 .signup__container {
